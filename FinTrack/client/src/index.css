@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(0, 0%, 0%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(0, 0%, 0%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(0, 0%, 0%);
+  --primary: hsl(14, 86%, 53%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(210, 40%, 96%);
+  --secondary-foreground: hsl(222.2, 84%, 4.9%);
+  --muted: hsl(210, 40%, 96%);
+  --muted-foreground: hsl(215.4, 16.3%, 46.9%);
+  --accent: hsl(210, 40%, 96%);
+  --accent-foreground: hsl(222.2, 84%, 4.9%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --border: hsl(214.3, 31.8%, 91.4%);
+  --input: hsl(214.3, 31.8%, 91.4%);
+  --ring: hsl(14, 86%, 53%);
+  --chart-1: hsl(14, 86%, 53%);
+  --chart-2: hsl(173, 58%, 39%);
+  --chart-3: hsl(197, 37%, 24%);
+  --chart-4: hsl(43, 74%, 66%);
+  --chart-5: hsl(27, 87%, 67%);
+  --radius: 0.5rem;
+  
+  /* Custom FinTech Dark Theme Variables */
+  --dark-primary: hsl(0, 0%, 0%);
+  --dark-secondary: hsl(0, 0%, 10%);
+  --dark-tertiary: hsl(0, 0%, 18%);
+  --teal-primary: hsl(172, 76%, 39%);
+  --teal-secondary: hsl(172, 76%, 29%);
+  --gray-light: hsl(215, 14%, 42%);
+  --gray-medium: hsl(215, 25%, 22%);
+}
+
+.dark {
+  --background: hsl(0, 0%, 0%);
+  --foreground: hsl(0, 0%, 100%);
+  --card: hsl(0, 0%, 10%);
+  --card-foreground: hsl(0, 0%, 100%);
+  --popover: hsl(0, 0%, 0%);
+  --popover-foreground: hsl(0, 0%, 100%);
+  --primary: hsl(172, 76%, 39%);
+  --primary-foreground: hsl(0, 0%, 0%);
+  --secondary: hsl(0, 0%, 18%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(0, 0%, 18%);
+  --muted-foreground: hsl(215, 14%, 42%);
+  --accent: hsl(0, 0%, 18%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(215, 25%, 22%);
+  --input: hsl(215, 25%, 22%);
+  --ring: hsl(172, 76%, 39%);
+  --chart-1: hsl(172, 76%, 39%);
+  --chart-2: hsl(217, 91%, 60%);
+  --chart-3: hsl(142, 76%, 36%);
+  --chart-4: hsl(262, 83%, 58%);
+  --chart-5: hsl(346, 87%, 43%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-dark-primary text-white font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  html {
+    @apply dark;
+  }
+}
+
+@layer utilities {
+  .bg-dark-primary {
+    background-color: var(--dark-primary);
+  }
+  
+  .bg-dark-secondary {
+    background-color: var(--dark-secondary);
+  }
+  
+  .bg-dark-tertiary {
+    background-color: var(--dark-tertiary);
+  }
+  
+  .bg-teal-primary {
+    background-color: var(--teal-primary);
+  }
+  
+  .bg-teal-secondary {
+    background-color: var(--teal-secondary);
+  }
+  
+  .text-teal-primary {
+    color: var(--teal-primary);
+  }
+  
+  .text-teal-secondary {
+    color: var(--teal-secondary);
+  }
+  
+  .text-gray-light {
+    color: var(--gray-light);
+  }
+  
+  .border-gray-medium {
+    border-color: var(--gray-medium);
+  }
+}
